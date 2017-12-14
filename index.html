@@ -11,9 +11,10 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	<title>Rishabh Sagar</title>
 	<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
 	<!-- Custom Theme files -->
-	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery-3.2.1.min.js"></script>
 	<!--theme-style-->
 	<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="css/mystyles.css" rel="stylesheet" type="text/css" media="all" />
 	<!--//theme-style-->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -43,10 +44,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	<link href='//fonts.googleapis.com/css?family=Dosis:400,200,300,500,600,700' rel='stylesheet' type='text/css'>
 	<link href='//fonts.googleapis.com/css?family=Righteous' rel='stylesheet' type='text/css'>
 	<script type="text/javascript">
-		$(window).load(function() {
+		$(window).on("load", function() {
 			$("#flexiselDemo1").flexisel({
-				visibleItems: 3,
+				visibleItems: 4,
 				animationSpeed: 1000,
+				itemsToScroll: 4,
 				autoPlay: true,
 				autoPlaySpeed: 3000,
 				pauseOnHover: true,
@@ -54,14 +56,17 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				responsiveBreakpoints: {
 					portrait: {
 						changePoint: 480,
+						itemsToScroll: 1,
 						visibleItems: 1
 					},
 					landscape: {
 						changePoint: 640,
+						itemsToScroll: 2,
 						visibleItems: 2
 					},
 					tablet: {
 						changePoint: 991,
+						itemsToScroll: 2,
 						visibleItems: 2
 					}
 				}
@@ -106,7 +111,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						<span class="icon-bar"></span>
 					  </button>
 					<div class="navbar-brand logo ">
-							<a href="index.html"><img src="./images/logo.png" width="210px" height="73px"></a>
+						<a href="index.html"><img src="./images/logo.png" width="210px" height="73px"></a>
 					</div>
 					<div class="clearfix"></div>
 				</div>
@@ -115,43 +120,51 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				<div class="collapse navbar-collapse nav-wil links" id="bs-example-navbar-collapse-1">
 					<div class="top-nav">
 						<a href="index.html" class="demo-4">
-      <span>
-        <span>Home</span>
-        <span>Home</span>
-        <span></span>
-      </span>
-    </a>
+				      <span>
+				        <span>Home</span>
+				        <span>Home</span>
+				        <span></span>
+				      </span>
+				    </a>
 
 						<a href="about.html" class="demo-4">
-      <span>
-        <span>About</span>
-        <span>About</span>
-        <span></span>
-      </span>
-    </a>
+				      <span>
+				        <span>About</span>
+				        <span>About</span>
+				        <span></span>
+				      </span>
+				    </a>
 						<a href="gallery.html" class="demo-4">
-      <span>
-        <span>Gallery</span>
-        <span>Gallery</span>
-        <span></span>
-      </span>
-    </a>
+				      <span>
+				        <span>Gallery</span>
+				        <span>Gallery</span>
+				        <span></span>
+				      </span>
+				    </a>
 						<a href="codes.html" class="demo-4">
-      <span>
-        <span>Exports</span>
-        <span>Exports</span>
-        <span></span>
-      </span>
-    </a>
+				      <span>
+				        <span>Exports</span>
+				        <span>Exports</span>
+				        <span></span>
+				      </span>
+				    </a>
+
+						<a href="codes.html" class="demo-4">
+							<span>
+								<span>News</span>
+								<span>News</span>
+								<span></span>
+							</span>
+						</a>
 
 
 						<a href="contact.html" class="demo-4">
-      <span>
-        <span>Contact</span>
-        <span>Contact</span>
-        <span></span>
-      </span>
-    </a>
+				      <span>
+				        <span>Contact</span>
+				        <span>Contact</span>
+				        <span></span>
+				      </span>
+				    </a>
 
 					</div>
 				</div>
@@ -181,7 +194,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		$(function() {
 			SyntaxHighlighter.all();
 		});
-		$(window).load(function() {
+		$(window).on("load", function() {
 			$('.flexslider').flexslider({
 				animation: "slide",
 				start: function(slider) {
@@ -198,12 +211,13 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		<div class="container">
 			<div class="col-md-2">
 				<div class="icon">
-					<img src="./images/about.jpg" width="160px" height="160px"/>
+					<img src="./images/about.jpg" width="195px" height="195px" style="padding-right: 10px;" />
 				</div>
 			</div>
 			<div class="col-md-8 content-text">
-				<h4>But I must explain to you how all this mistaken idea </h4>
-				<p> There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour</p>
+				<h4>A word from the CEO's desk </h4>
+				<p>I started my career way back in 1962 in manufacturing machine tools. Subsequently I have expanded my horizons and switched from machine tools to textile spinning.Throughout my career which spans over 55 years, I have continuously strived for perfection
+					and I believe that "Consumer Satisfaction" is in itself the biggest Reward.</p>
 			</div>
 			<div class="col-md-2 top-us">
 				<a class="hvr-bounce-to-top" href="about.html">About Us</a>
@@ -214,77 +228,460 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	<!---->
 	<div class="services">
 		<div class="container">
-			<div class="col-md-6 ser-grid ">
-				<div class="social">
-					<a href="#" class="link facebook"><span class="glyphicon glyphicon-fire "> </span></a>
+			<div class="col-md-6 ser-grid " style="max-height: 700px;">
+				<div class="social" style="height: 73px; padding-top: 3px;">
+					<a href="#" class="link facebook" style="height: 65px; width: 65px;"><span class="glyphicon glyphicon-wrench "> </span></a>
 				</div>
-				<h5>There are many variations of passages </h5>
-				<p class="para">Masagni dolores eoquie voluptaquisquam estqui dolorem ipsumquia dolor sitamnetase adipiscquam eiuse. Basmodi temporant</p>
-				<p> There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-					magna aliqua.</p>
+				<h5>Our Products </h5>
+
+				<div class="container">
+					<div class="row">
+						<div class="col-md-5" style="padding-top: 10px;">
+							<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+								<div class="panel panel-default">
+									<div class="panel-heading" role="tab" id="headingOne">
+										<h4 class="panel-title">
+							        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+							          Cot Grinding Machine
+							        </a>
+							      </h4>
+
+									</div>
+									<div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+										<div class="panel-body">
+											<div class="list-group">
+												<a href="#" class="list-group-item">Standard Cot Grinding Machine</a>
+												<a href="#" class="list-group-item">High Production Semi Auto Cot Grinding Machine</a>
+												<a href="#" class="list-group-item">Universal Fully Hydrualic Cot Grinding Machine</a>
+												<a href="#" class="list-group-item">Auto Feeding Cot Grinding Machine</a>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="panel panel-default">
+									<div class="panel-heading" role="tab" id="headingTwo">
+										<h4 class="panel-title">
+							        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+							          Eccentricity Taper and Tester
+							        </a>
+							      </h4>
+
+									</div>
+									<div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+										<div class="panel-body">
+											<div class="list-group">
+												<a href="#" class="list-group-item">Fully Motorised Eccentricity Taper and Tester</a>
+												<a href="#" class="list-group-item">Partially Electric Driven Eccentricity Taper and Tester</a>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="panel panel-default">
+									<div class="panel-heading" role="tab" id="headingThree">
+										<h4 class="panel-title">
+							        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+							          UV Top Roller Treatment Machine
+							        </a>
+							      </h4>
+
+									</div>
+									<div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+										<div class="panel-body">
+											<div class="list-group">
+												<a href="#" class="list-group-item">Manual UV Top Roller Treatment Machine</a>
+												<a href="#" class="list-group-item">Semi Auto UV Top Roller Treatment Machine</a>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="panel panel-default">
+									<div class="panel-heading" role="tab" id="headingFour">
+										<h4 class="panel-title">
+							        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+							          Hydraulic Cot Mounting Machine
+							        </a>
+							      </h4>
+
+									</div>
+									<div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+										<div class="panel-body">
+											<div class="list-group">
+												<a href="#" class="list-group-item">Hand Cot Mounting De-mounting Machine</a>
+												<a href="#" class="list-group-item">Vertical Pneumatic Cot Mounting &amp; Demounting Machine</a>
+												<a href="#" class="list-group-item">Heavy Duty Fully Hydraulic Cot Mounting/De-mounting M/C</a>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="panel panel-default">
+									<div class="panel-heading" role="tab" id="headingFive">
+										<h4 class="panel-title">
+							        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+							          Vertical Top Roller Greasing Machine
+							        </a>
+							      </h4>
+
+									</div>
+									<div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
+										<div class="panel-body">
+											<div class="list-group">
+												<a href="#" class="list-group-item">Vertical Top Roller Greasing Machine</a>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="panel panel-default">
+									<div class="panel-heading" role="tab" id="headingSix">
+										<h4 class="panel-title">
+							        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+							          Top Roller De-Greasing Machine
+							        </a>
+							      </h4>
+
+									</div>
+									<div id="collapseSix" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSix">
+										<div class="panel-body">
+											<div class="list-group">
+												<a href="#" class="list-group-item">Top Roller De-Greasing Machine</a>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="panel panel-default">
+									<div class="panel-heading" role="tab" id="headingSeven">
+										<h4 class="panel-title">
+							        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+							          Spindle Oil Maintenance Machine
+							        </a>
+							      </h4>
+
+									</div>
+									<div id="collapseSeven" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSeven">
+										<div class="panel-body">
+											<div class="list-group">
+												<a href="#" class="list-group-item">Spindle Oil Maintenance Machine</a>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="panel panel-default">
+									<div class="panel-heading" role="tab" id="headingEight">
+										<h4 class="panel-title">
+							        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+							           Flock Clearer Roller Cleaning Machine
+							        </a>
+							      </h4>
+									</div>
+									<div id="collapseEight" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingEight">
+										<div class="panel-body">
+											<div class="list-group">
+												<a href="#" class="list-group-item">Manual Flock Clearer Roller Cleaning Machine</a>
+												<a href="#" class="list-group-item">Auto Flock Clearer Roller Cleaning Machine</a>
+												<a href="#" class="list-group-item">Wooden Roller Cleaning Machine</a>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="panel panel-default">
+									<div class="panel-heading" role="tab" id="headingNine">
+										<h4 class="panel-title">
+							        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+							          Fluted Roller Trueing Machine
+							        </a>
+							      </h4>
+
+									</div>
+									<div id="collapseNine" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingNine">
+										<div class="panel-body">
+											<div class="list-group">
+												<a href="#" class="list-group-item">Fluted Roller Trueing Machine</a>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="panel panel-default">
+									<div class="panel-heading" role="tab" id="headingTen">
+										<h4 class="panel-title">
+							        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
+							          Flyer Cleaning Machine
+							        </a>
+							      </h4>
+
+									</div>
+									<div id="collapseTen" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTen">
+										<div class="panel-body">
+											<div class="list-group">
+												<a href="#" class="list-group-item">Pneumatic Operated Flyer Cleaning Machine</a>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="panel panel-default">
+									<div class="panel-heading" role="tab" id="headingEleven">
+										<h4 class="panel-title">
+							        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseEleven" aria-expanded="false" aria-controls="collapseEleven">
+							          Bobbin Stripping Machine
+							        </a>
+							      </h4>
+
+									</div>
+									<div id="collapseEleven" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingEleven">
+										<div class="panel-body">
+											<div class="list-group">
+												<a href="#" class="list-group-item">Semi Auto Bobbin Stripping Machine</a>
+												<a href="#" class="list-group-item">Hand Operated Bobbin Stripping Machine</a>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="panel panel-default">
+									<div class="panel-heading" role="tab" id="headingTwelve">
+										<h4 class="panel-title">
+							        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwelve" aria-expanded="false" aria-controls="collapseTwelve">
+							           Roving End Opener Machine
+							        </a>
+							      </h4>
+
+									</div>
+									<div id="collapseTwelve" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwelve">
+										<div class="panel-body">
+											<div class="list-group">
+												<a href="#" class="list-group-item">Roving Reminent Yarn Conversion Machine</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 			<div class="col-md-6 ser-grid ">
 				<div class="social">
-					<a href="#" class="link facebook"><span class="glyphicon glyphicon-piggy-bank"> </span></a>
+					<img src="./images/logo.png" width="210px" height="73px">
 				</div>
-				<h5>There are many variations of passages </h5>
-				<p class="para">Masagni dolores eoquie voluptaquisquam estqui dolorem ipsumquia dolor sitamnetase adipiscquam eiuse. Basmodi temporant</p>
-				<p> There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-					magna aliqua.</p>
+				<h5>Welcome to Panna Spin Equipments Pvt. Ltd.</h5>
+				<p class="para">Mr. R.K.Shah started manufacturing textile spinning equipment by developing the very first cot grinding machine in the year 1969 and creating the brand which is now globally recognized as SAGAR. The wide experience and frequent overseas visits of
+					Mr.Shah have been instrumental in making this company one of the leading manufacturer and exporter of textile spinning and maintenance equipment all over the world. As a reputed manufacturer and exporter, we have been regularly participating in exhibitions
+					both domestically and internationally. All our products have an authorized "CE" marking. With zero defects, committed delivery, after-sales services and technical support we have successfully supplied more than 500 sets of our complete range of products
+					in almost all the textile spinning units in India as well as about 25 countries in the international market. We are having highly qualified R&D division who works for improving the products and developing the new technology for the benefit of good
+					quality of yarn with full automation.</p>
+				<a href="about.html" class="btn btn-default">Read More</a>
 			</div>
 			<div class="clearfix"> </div>
 		</div>
 	</div>
 	<!---->
+
 	<div class="content-pro">
 		<div class="container">
-			<div class="col-md-4 content-pro-head content-pro-head2">
-				<h3>Our Services</h3>
-				<p>Many desktop publishing packages and web page editors now use Lorem Ipsum Ipsum as their default model text now use Lorem Ipsum as their default model text, packages and web page editors now use Lorem Ipsum now use Lorem Ipsum as their default model
-					text, and a as their default model text, lorem ipsum' will uncover many</p>
-
+			<div class="text-center ser-grid">
+				<h5 style="margin-top: 0px !important;">Product Gallery</h5>
 			</div>
-			<div class="col-md-8 content-pro-head1">
+			<div class="col-md-12 content-pro-head1">
 				<ul id="flexiselDemo1">
+
 					<li>
 						<div class="laptop">
-							<div class="img-box"><img class="img-responsive zoom-img" src="images/pi.jpg" alt=" " /></div>
-							<div class="flex-info ">
-								<h4>Services1</h4>
-								<p>Sit accusamus, vel blanditiis iure minima ipsa molestias minus laborum velit, nulla nisi hic quasi enim.</p>
+							<div class="img-box"><img class="zoom-img" src="./images/products/img1.jpg" width="277.5px" height="277.5px" alt=" " /></div>
+							<div class="flex-info " style="height: 92.8px;">
+								<p>Standard Cot Grinding Machine</p>
+							</div>
+						</div>
+					</li>
+
+					<li>
+						<div class="laptop">
+							<div class="img-box"><img class="zoom-img" src="./images/products/img2.jpg" alt=" " width="277.5px" height="277.5px" /></div>
+							<div class="flex-info flex-info1" style="height: 92.8px;">
+								<p>Fully Hydraulic Cot Grinding Machine</p>
 							</div>
 						</div>
 
 					</li>
-					<li>
-						<div class="laptop">
-							<div class="img-box"><img class="img-responsive zoom-img" src="images/pi1.jpg" alt=" " /></div>
-							<div class="flex-info flex-info1">
-								<h4>Services2</h4>
-								<p>Sit accusamus, vel blanditiis iure minima ipsa molestias minus laborum velit, nulla nisi hic quasi enim.</p>
-							</div>
-						</div>
 
-					</li>
 					<li>
 						<div class="laptop">
-							<div class="img-box"><img class="img-responsive zoom-img" src="images/pi2.jpg" alt=" " /></div>
-							<div class="flex-info flex-info2">
-								<h4>Services3</h4>
-								<p>Sit accusamus, vel blanditiis iure minima ipsa molestias minus laborum velit, nulla nisi hic quasi enim.</p>
+							<div class="img-box"><img class="zoom-img" src="./images/products/img3.jpg" alt=" " width="277.5px" height="277.5px" /></div>
+							<div class="flex-info flex-info2" style="height: 92.8px;">
+								<p>Auto Feeding Cot Grinding Machine</p>
 							</div>
 						</div>
 					</li>
+
 					<li>
 						<div class="laptop">
-							<div class="img-box"><img class="img-responsive zoom-img" src="images/pi3.jpg" alt=" " /></div>
-							<div class="flex-info flex-info3">
-								<h4>Services4</h4>
-								<p>Sit accusamus, vel blanditiis iure minima ipsa molestias minus laborum velit, nulla nisi hic quasi enim.</p>
+							<div class="img-box"><img class="zoom-img" src="./images/products/img4.jpg" alt=" " width="277.5px" height="277.5px" /></div>
+							<div class="flex-info flex-info3" style="height: 92.8px;">
+								<p>Fully Motorised Eccentricity and Taper Tester</p>
 							</div>
 						</div>
 					</li>
-				</ul>
+
+					<li>
+						<div class="laptop">
+							<div class="img-box"><img class="zoom-img" src="./images/products/img5.jpg" alt=" " width="277.5px" height="277.5px" /></div>
+							<div class="flex-info" style="height: 92.8px;">
+								<p>UV Top Roller Treatment Machine</p>
+							</div>
+						</div>
+					</li>
+
+					<li>
+						<div class="laptop">
+							<div class="img-box"><img class="zoom-img" src="./images/products/img6.jpg" alt=" " width="277.5px" height="277.5px" /></div>
+							<div class="flex-info flex-info1" style="height: 92.8px;">
+								<p>Hand Cot Mounting/De-mounting Machine</p>
+							</div>
+						</div>
+					</li>
+
+					<li>
+						<div class="laptop">
+							<div class="img-box"><img class="zoom-img" src="./images/products/img7.jpg" alt=" " width="277.5px" height="277.5px" /></div>
+							<div class="flex-info flex-info2" style="height: 92.8px;">
+								<p>Vertical Pneumatic Mounting/Demounting Machine</p>
+							</div>
+						</div>
+					</li>
+
+					<li>
+						<div class="laptop">
+							<div class="img-box"><img class="zoom-img" src="./images/products/img8.jpg" alt=" " width="277.5px" height="277.5px" /></div>
+							<div class="flex-info flex-info3" style="height: 92.8px;">
+								<p>Heavy Duty Fully Hydraulic Cot Mounting/Demounting Machine</p>
+							</div>
+						</div>
+					</li>
+
+					<li>
+						<div class="laptop">
+							<div class="img-box"><img class="zoom-img" src="./images/products/img9.jpg" alt=" " width="277.5px" height="277.5px" /></div>
+							<div class="flex-info" style="height: 92.8px;">
+								<p>Vertical Top Roller Greasing Machine</p>
+							</div>
+						</div>
+					</li>
+
+					<li>
+						<div class="laptop">
+							<div class="img-box"><img class="zoom-img" src="./images/products/img10.jpg" alt=" " width="277.5px" height="277.5px" /></div>
+							<div class="flex-info flex-info1" style="height: 92.8px;">
+								<p>Top Roller De-Greasing Machine</p>
+								</div>
+						</div>
+					</li>
+
+					<li>
+						<div class="laptop">
+							<div class="img-box"><img class="zoom-img" src="./images/products/img11.jpg" alt=" " width="277.5px" height="277.5px" /></div>
+							<div class="flex-info flex-info2" style="height: 92.8px;">
+								<p>Spindle Oil Maintenance Machine</p>
+								</div>
+						</div>
+					</li>
+
+					<li>
+						<div class="laptop">
+							<div class="img-box"><img class="zoom-img" src="./images/products/img12.png" alt=" " width="277.5px" height="277.5px" /></div>
+							<div class="flex-info flex-info3" style="height: 92.8px;">
+								<p>Pneumatic Operated Flyer Cleaning Machine</p>
+								</div>
+						</div>
+					</li>
+
+					<li>
+						<div class="laptop">
+							<div class="img-box"><img class="zoom-img" src="./images/products/img13.jpg" alt=" " width="277.5px" height="277.5px" /></div>
+							<div class="flex-info" style="height: 92.8px;">
+								<p>Fluter Roller trueing Machine</p>
+							</div>
+						</div>
+					</li>
+
+					<li>
+						<div class="laptop">
+							<div class="img-box"><img class="zoom-img" src="./images/products/img14.png" alt=" " width="277.5px" height="277.5px" /></div>
+							<div class="flex-info flex-info1" style="height: 92.8px;">
+								<p>Semi Auto Bobbin Stripping Machine</p>
+							</div>
+						</div>
+					</li>
+
+					<li>
+						<div class="laptop">
+							<div class="img-box"><img class="zoom-img" src="./images/products/img15.png" alt=" " width="277.5px" height="277.5px" /></div>
+							<div class="flex-info flex-info2" style="height: 92.8px;">
+								<p>Roving End Opening Machine</p>
+							</div>
+						</div>
+					</li>
+
+					<li>
+						<div class="laptop">
+							<div class="img-box"><img class="zoom-img" src="./images/products/img16.png" alt=" " width="277.5px" height="277.5px" /></div>
+							<div class="flex-info flex-info3" style="height: 92.8px;">
+								<p>Flock Clearer Roller Cleaning Machine</p>
+							</div>
+						</div>
+					</li>
+
+					<li>
+						<div class="laptop">
+							<div class="img-box"><img class="zoom-img" src="./images/products/img17.png" alt=" " width="277.5px" height="277.5px" /></div>
+							<div class="flex-info" style="height: 92.8px;">
+								<p>Auto Flock Clearer Roller Cleaning Machine</p>
+							</div>
+						</div>
+					</li>
+
+					<li>
+						<div class="laptop">
+							<div class="img-box"><img class="zoom-img" src="./images/products/img18.png" alt=" " width="277.5px" height="277.5px" /></div>
+							<div class="flex-info flex-info1" style="height: 92.8px;">
+								<p>Auto UV Top Roller Treating Machine</p>
+							</div>
+						</div>
+					</li>
+
+					<!-- <li>
+						<div class="laptop">
+							<div class="img-box"><img class="zoom-img" src="./images/products/img19.jpg" alt=" " width="277.5px" height="277.5px" /></div>
+							<div class="flex-info flex-info3" style="height: 92.8px;">
+								<p>Partially Electrical Driven Eccentricity &amp; Taper Tester</p>
+							</div>
+						</div>
+					</li> -->
+
+					<!-- <li>
+						<div class="laptop">
+							<div class="img-box"><img class="zoom-img" src="./images/products/img20.png" alt=" " width="277.5px" height="277.5px" /></div>
+							<div class="flex-info flex-info3" style="height: 92.8px;">
+								<p>Manual Pneumatic Operated Bobbin Stripping Machine</p>
+							</div>
+						</div>
+					</li> -->
+
+					<!-- <li>
+						<div class="laptop">
+							<div class="img-box"><img class="zoom-img" src="./images/products/img21.png" alt=" " width="277.5px" height="277.5px" /></div>
+							<div class="flex-info flex-info3" style="height: 92.8px;">
+								<p>Manual Operated Wooden Roller Cleaning Machine</p>
+							</div>
+						</div>
+					</li>
+				</ul> -->
 
 			</div>
 			<div class="clearfix"> </div>
@@ -295,56 +692,28 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	<div class="content-pro content-pro1">
 		<div class="container">
 			<div class="col-md-4 content-pro-head team-t">
-				<h3>Our Team</h3>
+				<h3>The Executive Team</h3>
 				<p>Many desktop publishing packages and web page editors now use Lorem Ipsum Ipsum as their default model text now use Lorem Ipsum as their default model text, packages and web page editors now use Lorem Ipsum now use Lorem Ipsum as their default model
 					text, and a as their default model text, lorem ipsum' will uncover many</p>
 
 			</div>
 			<div class="col-md-8 content-pro-head1 team-t1">
-				<div class="col-md-4 bottom-grid ">
+				<div class="col-md-6 bottom-grid ">
 					<div class="btm-right">
-						<img src="images/te.jpg" class="img-responsive" alt=" ">
+						<img src="images/about.jpg" class="img-responsive" alt=" ">
 						<div class="captn">
-							<h4>Victoria</h4>
-							<p>Ceo</p>
-							<ul class="social-ic">
-								<li><a href="#"><i></i></a></li>
-								<li><a href="#"><i class="ic"></i></a></li>
-								<li><a href="#"><i class="ic1"></i></a></li>
-								<li><a href="#"><i class="ic2"></i></a></li>
-							</ul>
+							<h4>Mr. Rajendra Shah</h4>
+							<p>Executive Director</p>
 						</div>
 					</div>
 				</div>
-				<div class="col-md-4 bottom-grid ">
+				<div class="col-md-6 bottom-grid ">
 					<div class="btm-right">
-						<img src="images/te1.jpg" class="img-responsive" alt=" ">
+						<img src="images/about.jpg" class="img-responsive" alt=" ">
 						<div class="captn">
 
-							<h4>Adley</h4>
-							<p>Manager</p>
-							<ul class="social-ic">
-								<li><a href="#"><i></i></a></li>
-								<li><a href="#"><i class="ic"></i></a></li>
-								<li><a href="#"><i class="ic1"></i></a></li>
-								<li><a href="#"><i class="ic2"></i></a></li>
-							</ul>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4 bottom-grid ">
-					<div class="btm-right">
-						<img src="images/te2.jpg" class="img-responsive" alt=" ">
-						<div class="captn">
-
-							<h4>Immortal</h4>
-							<p>Engineer</p>
-							<ul class="social-ic">
-								<li><a href="#"><i></i></a></li>
-								<li><a href="#"><i class="ic"></i></a></li>
-								<li><a href="#"><i class="ic1"></i></a></li>
-								<li><a href="#"><i class="ic2"></i></a></li>
-							</ul>
+							<h4>Mrs. Panna Shah</h4>
+							<p>Director</p>
 						</div>
 					</div>
 				</div>
@@ -403,7 +772,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					<li><a href="index.html">Home</a></li>
 					<li><a href="about.html">About</a></li>
 					<li><a href="gallery.html">Gallery</a></li>
-					<li><a href="codes.html">Codes</a></li>
+					<li><a href="codes.html">Exports</a></li>
 					<li><a href="contact.html">Contact</a></li>
 				</ul>
 				<div class="copy">
@@ -415,7 +784,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	</div>
 	<!--footer-->
 	<!-- for bootstrap working -->
-	<script src="js/bootstrap.min.js"></script>
+	<script src="js/bootstrap.js"></script>
 	<!-- //for bootstrap working -->
 
 </body>

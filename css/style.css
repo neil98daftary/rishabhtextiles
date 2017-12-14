@@ -5,7 +5,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 --*/
 html,body{
 	background:#fff;
-	font-size: 100%;	
+	font-size: 100%;
 	font-family: 'Dosis', sans-serif;
 }
 body a{
@@ -20,7 +20,7 @@ body a{
 	margin: 0;
 }
 h1,h2,h3,h4,h5,h6,label,p{
-	margin:0;	
+	margin:0;
 }
 h1,h2,h3,h4,h5,h6{
 	font-family: 'Righteous', cursive;
@@ -74,16 +74,16 @@ ul.head-left li:nth-child(2) {
     width: 30px;
     height: 30px;
     display: block;
-    background: url(../images/img-sprite.png)no-repeat -3px -1px ;   
+    background: url(../images/img-sprite.png)no-repeat -3px -1px ;
 }
 .social-ic li a i.ic {
-    background-position: -79px 0px ;   
+    background-position: -79px 0px ;
 }
 .social-ic li a i.ic1 {
-    background-position: -150px 0px ;   
+    background-position: -150px 0px ;
 }
 .social-ic li a i.ic2 {
-    background-position: -234px -1px ;   
+    background-position: -234px -1px ;
 }
 
 /*----*/
@@ -159,24 +159,24 @@ ul.head-left li:nth-child(2) {
 -------------------------------------------------*/
 
 .demo-4 {
-  width: 110px;   
-  background-color: transparent;    
-  cursor: pointer;  
-  border-color: #12A7CA; 
+  width: 110px;
+  background-color: transparent;
+  cursor: pointer;
+  border-color: #12A7CA;
 }
 
 .demo-4:hover {
-  border-color: #C69C6C;  
+  border-color: #C69C6C;
 }
 
 
 .demo-4 span:nth-child(1) {
-  color: #C69C6C; 
+  color: #C69C6C;
 }
 
 
 .demo-4 span:nth-child(2) {
-  color: #12A7CA; 
+  color: #12A7CA;
 }
 
 
@@ -467,7 +467,7 @@ ul.head-left li:nth-child(2) {
 }
 /*----*/
 .head {
-	padding: 1em 0em;	
+	padding: 1em 0em;
 }
 /*----*/
 .logo{
@@ -495,7 +495,8 @@ nav.navbar.navbar-default {
 }
 /*--//header--*/
 .services {
-    padding: 6em 0;
+    padding: 3.5em 0;
+		overflow: hidden;
 }
 .ser-grid i{
 	font-size:3em;
@@ -648,7 +649,7 @@ nav.navbar.navbar-default {
     font-weight: 600;
 }
 .content-pro {
-    padding: 6em 0 ;
+    padding: 3.5em 0 ;
 }
 /*--flexisel--*/
 #flexiselDemo1 {
@@ -808,7 +809,7 @@ background: url(../images/arrow_right.png) no-repeat 15px 15px #12A7CA;
 	display:inline-block;
 	color:#fff;
 	font-size:1em;
-	margin:0 1em;	
+	margin:0 1em;
 }
 
 p.footer-gri {
@@ -862,7 +863,7 @@ p.footer-gri a:hover {
     font-size: 1em;
     color: #999;
     float: left;
-    border: none;  
+    border: none;
 }
 .grid-contact textarea{
 	border:none;
@@ -1048,7 +1049,7 @@ figure.effect-img .ga-text p {
 	padding:6em 0;
 }
 .why{
-	background: url(../images/wh.jpg) no-repeat fixed;
+	background: url(../images/wk.png) no-repeat fixed;
     width: 100%;
     min-height: 380px;
     display: block;
@@ -1469,7 +1470,7 @@ figure.effect-img .ga-text h4 {
 }
 /*--typo--*/
 .page-header h3 {
-  font-size: 2em; 
+  font-size: 2em;
 }
 button.btn.btn-lg {
   font-size: 1em;
