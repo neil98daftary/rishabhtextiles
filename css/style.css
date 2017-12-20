@@ -520,6 +520,7 @@ nav.navbar.navbar-default {
 }
 .content-grid {
     background: #12A7CA;
+		margin-bottom: 20px;
 }
 .content-text h4{
 	color:#fff;
